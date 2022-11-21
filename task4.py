@@ -6,5 +6,11 @@
 #     - 5 -> нет
 #     - 0,34 -> 3
 
-N = input()
-print(N[2])
+a = float(input())
+b = int(a)
+c = a - b
+g = int(c * 10)
+if g == 0:
+    print('No')
+else:
+    print(g)
