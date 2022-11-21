@@ -5,4 +5,4 @@ N = int(input())
 if ((N % 5 == 0 and N % 10 == 0) or N % 15 == 0) and N % 30 != 0:
     print('OK')
 else:
-    print('Not OK')
+    print('NOT OK')
