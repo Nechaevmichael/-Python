@@ -4,5 +4,14 @@
 a = int(input())
 b = int(input())
 
-if b / a == a:
-    print('Является')
+# if a == b ** 2 or a ** 2 == b:
+#     print(f'Число {a} квадрат {b}')
+# else:
+#     print('Не является')
+
+if a == b ** 2:
+    print('OK')
+elif b == a ** 2:
+    print('OK')
+else:
+    print('NO')
