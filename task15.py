@@ -5,12 +5,13 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
-# n = float(input())
-# sum = 0
-# i = 0
-# while n > 0:
-#     sum += n % 10
-#     n //= 10
-# print(int(sum))
+n = float(input())
 
-print(1.5%1)
+while n % 1 != 0:
+    n *= 10
+print(n)
+sum = 0
+while n > 0:
+    sum += n % 10
+    n //= 10
+print(int(sum))
