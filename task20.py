@@ -7,7 +7,7 @@
 # - список: [], ищем: "123", ответ: -1
 
 a = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
-text = input()
+text = input('Введите искомую строку: ')
 count = 0
 for i in range(len(a)):
     if a[i] == text:
