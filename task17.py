@@ -13,7 +13,7 @@ data = open(path, "r")
 
 for line in data:
     digits = line.split(' ')
-
+data.close()
 position = []
 for i in range(len(digits)):
     position.append(int(digits[i]))
