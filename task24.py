@@ -12,7 +12,6 @@ b = []
 for i in range(len(a)):
     if a[i] % 1 != 0:
         b.append(round(a[i] % 1, 4))
-# print(max(b))
-# dig = round(max(b), 4)
-# print(dig)
-print(max(b) - min(b))
+
+dig = max(b) - min(b)
+print(dig)
