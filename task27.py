@@ -22,3 +22,10 @@ elif D == 0:
 else:
     print('Корней не существует')
 
+import sympy
+
+x = sympy.Symbol('x')
+
+a = input('Input eq:')
+print(sympy.solve(a, x))
+
