@@ -5,13 +5,16 @@
 # [1, 5, 2, 3, 4, 6, 1, 7] => [1, 2, 3] или [1, 7] или [1, 6, 7] и т.д.
 
 
-n = [1, 5, 2, 3, 4, 6, 1, 7]
+n = [7, 5, 2, 3, 4, 6, 1, 7]
 
 result = []
-temp = n[0]
-result.append(temp)
 for i in range(len(n)):
-    if n[i] > temp:
-        result.append(n[i])
-        temp = n[i]
+    for j in range(i, len(n)):
+        print(i, j)
+        if n[j] > n[i]:
+            result.append(n[j])
+    if len(result) > 1:
+        break
+    else:
+        result = []
 print(result)
