@@ -10,5 +10,5 @@ string = string.split()
 #         result.append(string[i])
 # print(result)
 
-result = [string[i] for i in range(len(string)) if "абв" not in string[i]]
+result = [i for i in string if "абв" not in i]
 print(result)
