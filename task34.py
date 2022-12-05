@@ -3,10 +3,10 @@
 # *'  1 3 -> 2
 
 
-n = [0, 2, 3, 5, 6, 7]
+n = [0, 1, 2, 4, 6, 7]
 result = 0
 for i in range(len(n)):
-    if n[i + 1] - n[i] > 1:
+    if n[i + 1] - n[i] != 1:
         result = n[i] + 1
         break
 print(result)
