@@ -11,9 +11,9 @@
 line = 'house=дом car=машина men=человек tree=дерево'
 result = []
 for l in line.split():
-  s = tuple(map(str, l.split('=')))
+  s = tuple(l.split('='))
   result.append(s)
 print(tuple(result))
 
-tp = tuple(tuple(map(str, l.split('='))) for l in line.split())
+tp = tuple(tuple(l.split('=')) for l in line.split())
 print(tp)
