@@ -18,3 +18,9 @@ for i in l:
         result.append('-')
 
 print(*result)
+
+line = 'Москва Уфа Вологда Тула Владивосток Хабаровск'
+
+lst = list(map(lambda x: '-' if len(x) < 5 else x, line.split()))
+
+print(' '.join(lst))
