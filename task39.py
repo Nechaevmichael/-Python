@@ -14,6 +14,6 @@
 # print(f'Ответ: {sum}')
 
 # Использование List Comprehension 
-b = [2, 3, 5, 9, 3]
+b = list(map(int, input().split()))
 result = [b[i] for i in range(len(b)) if i % 2 != 0]
 print(sum(result))
