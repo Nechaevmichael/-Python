@@ -6,17 +6,9 @@ import telebot
 
 def text_clear(text, find_str):
 	ch = text.split(' ')
-	# l = list()
-    # for item in c:
-    #     if 'абв' not in item:
-    #         l.append(item)
-    # if len(l) == 0:
-    #     l = ['Empty',]
-	# return ' '.join(l)
 	result = []
 	for item in ch:
 		if 'абв' not in item:
-	    # if item.find(find_str) > -1:
 			result.append(item)
 	if len(result) == 0:
 		result = ['Empty',]
