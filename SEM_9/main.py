@@ -3,7 +3,6 @@
 
 import telebot
 
-
 def text_clear(text, find_str):
 	ch = text.split(' ')
 	result = []
@@ -11,9 +10,8 @@ def text_clear(text, find_str):
 		if 'абв' not in item:
 			result.append(item)
 	if len(result) == 0:
-		result = ['Empty',]
+		result = ['Empty']
 	return ' '.join(result)
-
 
 bot = telebot.TeleBot("5863341083:AAHVdyjHrSrqmr1fDaVB4kYSiIstMBHvPM4")
 
